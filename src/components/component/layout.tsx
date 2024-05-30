@@ -175,7 +175,7 @@ export function Layout() {
               <div className="bg-white p-4 dark:bg-gray-950">
                 <h3 className="text-lg font-bold">Illustration Design</h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  A series of whimsical illustrations for a children's book.
+                  수정부분
                 </p>
               </div>
             </div>
@@ -212,8 +212,7 @@ export function Layout() {
           <div className="space-y-3">
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Get in Touch</h2>
             <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              Have a project in mind or want to learn more about Sophia's services? Fill out the form below, and she'll
-              be in touch.
+              수정부분
             </p>
           </div>
           <div className="mx-auto w-full max-w-sm space-y-2">
