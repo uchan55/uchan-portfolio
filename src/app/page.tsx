@@ -12,7 +12,7 @@ export default function Home() {
           <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
             <div className="flex flex-col justify-center items-center space-y-4 centered-container">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">Sophia Designs</h1>
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">portfolio</h1>
                 <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
                   Crafting visually stunning and user-centric designs that captivate and inspire.
                 </p>
@@ -51,11 +51,11 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-full py-12 md:py-24 lg:py-32">
-        <div className="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
-          <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">About Sophia</h2>
-            <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+      <section className="w-full py-12 md:py-24 lg:py-32 flex flex-col items-center justify-center ">
+        <div className="container flex items-center justify-center gap-6 px-4 md:px-6 lg:flex lg:gap-10">
+          <div className="space-y-2 ">
+            <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight text-center ">About Sophia</h2>
+            <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 text-center">
               Sophia is a highly skilled and award-winning graphic designer with over 10 years of experience in the
               industry. She is passionate about creating visually stunning and user-centric designs that captivate and
               inspire.
