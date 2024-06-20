@@ -29,7 +29,7 @@ export default function Home() {
             </nav>
           </div>
           <div className="hidden md:flex space-x-4">
-            <Button variant="secondary">Login</Button>
+            <Button variant="secondary">Exit</Button>
           </div>
           <div className="md:hidden">
             <button className="p-2 rounded-md hover:bg-gray-800 transition-colors">
