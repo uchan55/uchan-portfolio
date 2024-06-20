@@ -39,56 +39,61 @@ export default function Home() {
         </div>
       </section>
       <section className="w-full py-12 md:py-24 lg:py-32 relative">
-        <div className="absolute left-0 top-0 w-full h-full bg-cover bg-center bg-no-repeat" style={{ backgroundImage: '814d1b39-111b-4b71-837b-81886033d7b3.png")' }}></div>
-        <div className="container mx-auto px-4 md:px-6 relative z-10">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">그래픽 작업 프로세스</h2>
-              <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                아이디어 구상부터 최종 디자인 완성까지의 단계를 소개합니다.
-              </p>
-            </div>
-          </div>
-          <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 sm:grid-cols-2 md:grid-cols-3 lg:gap-12">
-            <div>
-              <h3 className="mb-2 text-xl font-semibold">아이디어 구상</h3>
-              <p className="text-gray-500 dark:text-gray-400">
-                고객의 요구사항을 바탕으로 다양한 아이디어를 구상합니다.
-              </p>
-            </div>
-            <div>
-              <h3 className="mb-2 text-xl font-semibold">스케치 및 초안 작업</h3>
-              <p className="text-gray-500 dark:text-gray-400">
-                아이디어를 바탕으로 스케치와 초안을 작성합니다.
-              </p>
-            </div>
-            <div>
-              <h3 className="mb-2 text-xl font-semibold">디지털 작업 및 수정</h3>
-              <p className="text-gray-500 dark:text-gray-400">
-                스케치를 디지털 파일로 옮겨 작업하고, 고객의 피드백을 반영하여 수정합니다.
-              </p>
-            </div>
-            <div>
-              <h3 className="mb-2 text-xl font-semibold">최종 디자인 완성</h3>
-              <p className="text-gray-500 dark:text-gray-400">
-                모든 수정 사항을 반영하여 최종 디자인을 완성합니다.
-              </p>
-            </div>
-            <div>
-              <h3 className="mb-2 text-xl font-semibold">피드백 및 승인</h3>
-              <p className="text-gray-500 dark:text-gray-400">
-                고객의 피드백을 받아 최종 디자인을 승인받습니다.
-              </p>
-            </div>
-            <div>
-              <h3 className="mb-2 text-xl font-semibold">전달 및 후속 지원</h3>
-              <p className="text-gray-500 dark:text-gray-400">
-                최종 디자인 파일을 고객에게 전달하고, 필요에 따라 추가 지원을 제공합니다.
-              </p>
-            </div>
-          </div>
+  <div className="absolute left-0 top-0 w-full h-full bg-cover bg-left bg-no-repeat" style={{ backgroundImage: 'url("/814d1b39-111b-4b71-837b-81886033d7b3.png")', backgroundSize: 'contain' }}></div>
+  <div className="container mx-auto px-4 md:px-6 relative z-10 flex justify-between items-center">
+    <div className="w-full md:w-1/2 pl-8 md:pr-8">
+      <div className="space-y-2">
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">그래픽 작업 프로세스</h2>
+        <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+          아이디어 구상부터 최종 디자인 완성까지의 단계를 소개합니다.
+        </p>
+      </div>
+    </div>
+    <div className="w-full md:w-1/2 pr-8">
+      <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 sm:grid-cols-2 md:grid-cols-3 lg:gap-12">
+        <div>
+          <h3 className="mb-2 text-xl font-semibold">아이디어 구상</h3>
+          <p className="text-gray-500 dark:text-gray-400">
+            고객의 요구사항을 바탕으로 다양한 아이디어를 구상합니다.
+          </p>
         </div>
-      </section>
+        <div>
+          <h3 className="mb-2 text-xl font-semibold">스케치 및 초안 작업</h3>
+          <p className="text-gray-500 dark:text-gray-400">
+            아이디어를 바탕으로 스케치와 초안을 작성합니다.
+          </p>
+        </div>
+        <div>
+          <h3 className="mb-2 text-xl font-semibold">디지털 작업 및 수정</h3>
+          <p className="text-gray-500 dark:text-gray-400">
+            스케치를 디지털 파일로 옮겨 작업하고, 고객의 피드백을 반영하여 수정합니다.
+          </p>
+        </div>
+        <div>
+          <h3 className="mb-2 text-xl font-semibold">최종 디자인 완성</h3>
+          <p className="text-gray-500 dark:text-gray-400">
+            모든 수정 사항을 반영하여 최종 디자인을 완성합니다.
+          </p>
+        </div>
+        <div>
+          <h3 className="mb-2 text-xl font-semibold">피드백 및 승인</h3>
+          <p className="text-gray-500 dark:text-gray-400">
+            고객의 피드백을 받아 최종 디자인을 승인받습니다.
+          </p>
+        </div>
+        <div>
+          <h3 className="mb-2 text-xl font-semibold">전달 및 후속 지원</h3>
+          <p className="text-gray-500 dark:text-gray-400">
+            최종 디자인 파일을 고객에게 전달하고, 필요에 따라 추가 지원을 제공합니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
       <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
