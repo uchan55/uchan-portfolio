@@ -10,9 +10,6 @@ export default function Home() {
       <header className="w-full bg-gray-900 text-gray-50 py-4 shadow-md fixed top-0 z-50">
         <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
           <div className="flex items-center space-x-4">
-            <Link href="https://naver.com" target='_blank'>
-              <Image src="/logo.svg" alt="Logo" width={40} height={40} />
-            </Link>
             <nav className="hidden md:flex space-x-4">
               <Link href="https://naver.com" target='_blank' className="hover:text-gray-400 transition-colors">
                 Home
@@ -51,8 +48,6 @@ export default function Home() {
           </div>
         </div>
       </header>
-
-
       <section className="w-full pt-12 md:pt-24 lg:pt-32">
         <div className="container mx-auto px-4 md:px-6">
           <div className="space-y-10 xl:space-y-16">
