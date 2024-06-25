@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 export default function Home() {
   return (
     <main className="flex flex-col min-h-[100dvh]">
-      <header className="w-full bg-gray-900 text-gray-50 py-4 shadow-md">
+      <header className="w-full bg-gray-900 text-gray-50 py-4 shadow-md fixed top-0 z-50">
         <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
           <div className="flex items-center space-x-4">
             <Link href="https://naver.com" target='_blank'>
@@ -52,6 +52,7 @@ export default function Home() {
         </div>
       </header>
 
+
       <section className="w-full pt-12 md:pt-24 lg:pt-32">
         <div className="container mx-auto px-4 md:px-6">
           <div className="space-y-10 xl:space-y-16">
@@ -68,11 +69,9 @@ export default function Home() {
                   <Link
                     className="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
                     href="#portfolio"
-                    scroll={true}
-                  >
+                    scroll={true}>
                     포트폴리오 둘러보기
                   </Link>
-
                   <div id="portfolio" className="mt-20">
                     {/* 포트폴리오 섹션 내용 */}
                   </div>
