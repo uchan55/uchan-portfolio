@@ -12,21 +12,21 @@ export default function Home() {
           <div className="flex items-center space-x-4">
             <nav className="hidden md:flex space-x-4">
               <Link href="https://naver.com" target='_blank' className="hover:text-gray-400 transition-colors">
-                Home
+                홈
               </Link>
               <Link href="https://naver.com" target='_blank' className="hover:text-gray-400 transition-colors">
-                About
+                소개
               </Link>
               <Link href="https://naver.com" target='_blank' className="hover:text-gray-400 transition-colors">
-                Portfolio
+                포트폴리오
               </Link>
               <Link href="https://naver.com" target='_blank' className="hover:text-gray-400 transition-colors">
-                Contact
+                연락처
               </Link>
             </nav>
           </div>
           <div className="hidden md:flex space-x-4">
-            <Button variant="secondary">Exit</Button>
+            <Button variant="secondary">나가기</Button>
           </div>
           <div className="md:hidden">
             <button className="p-2 rounded-md hover:bg-gray-800 transition-colors">
@@ -48,13 +48,14 @@ export default function Home() {
           </div>
         </div>
       </header>
+
       <section className="w-full pt-12 md:pt-24 lg:pt-32">
         <div className="container mx-auto px-4 md:px-6">
           <div className="space-y-10 xl:space-y-16">
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
               <div className="flex flex-col items-center justify-center space-y-4">
                 <div className="space-y-2">
-                  <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">Graphic portfolio</h1>
+                  <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">경유찬 그래픽 포트폴리오</h1>
                   <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
                     저는 시각적으로 멋진 디자인을 만들어내는 것에 열정을 두고 있습니다.
 
