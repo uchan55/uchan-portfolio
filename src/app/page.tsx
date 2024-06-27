@@ -11,22 +11,19 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
           <div className="flex items-center space-x-4">
             <nav className="hidden md:flex space-x-4">
-              <Link href="https://naver.com" target='_blank' className="hover:text-gray-400 transition-colors">
+              <a href="#home" className="hover:text-gray-400 transition-colors">
                 홈
-              </Link>
-              <Link href="https://naver.com" target='_blank' className="hover:text-gray-400 transition-colors">
-                소개
-              </Link>
-              <Link href="https://naver.com" target='_blank' className="hover:text-gray-400 transition-colors">
-                포트폴리오
-              </Link>
-              <Link href="https://naver.com" target='_blank' className="hover:text-gray-400 transition-colors">
-                연락처
-              </Link>
+              </a>
+              <a href="#intro" className="hover:text-gray-400 transition-colors">
+                프로세스
+              </a>
+              <a href="#portfolio" className="hover:text-gray-400 transition-colors">
+                3D Graphic
+              </a>
+              <a href="#contact" className="hover:text-gray-400 transition-colors">
+                연락하기
+              </a>
             </nav>
-          </div>
-          <div className="hidden md:flex space-x-4">
-            <Button variant="secondary">나가기</Button>
           </div>
           <div className="md:hidden">
             <button className="p-2 rounded-md hover:bg-gray-800 transition-colors">
@@ -49,43 +46,51 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="w-full pt-12 md:pt-24 lg:pt-32">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="space-y-10 xl:space-y-16">
-            <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
-              <div className="flex flex-col items-center justify-center space-y-4">
-                <div className="space-y-2">
-                  <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">경유찬 그래픽 포트폴리오</h1>
-                  <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
-                    저는 시각적으로 멋진 디자인을 만들어내는 것에 열정을 두고 있습니다.
+      <section id="home" className="w-full py-40 md:py-56 lg:py-72 bg-gradient-to-b from-gray-200 to-gray-100 dark:from-gray-800 dark:to-gray-700">
+  <div className="container mx-auto px-4 md:px-6">
+    <div className="space-y-36 xl:space-y-54">
+      <div className="flex flex-col items-center justify-center space-y-24">
+        <div className="text-center space-y-12">
+          <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">경유찬 그래픽 포트폴리오</h1>
+          <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
+            저는 시각적으로 멋진 디자인을 만들어내는 것에 열정을 두고 있습니다.
+          </p>
+        </div>
+        <div className="flex flex-col gap-9 min-[400px]:flex-row">
+          <Link
+            className="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+            href="#portfolio-image"
+            scroll={true}
+            smooth={true}
+            offset={-1600}
+            duration={6000}
+          >
+            포트폴리오 둘러보기
+          </Link>
+        </div>
+      </div>
+      <div className="mt-72">
+        {/* 포트폴리오 섹션 내용 */}
+      </div>
+    </div>
+  </div>
+</section>
 
-                  </p>
-                </div>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Link
-                    className="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
-                    href="#portfolio"
-                    scroll={true}>
-                    포트폴리오 둘러보기
-                  </Link>
-                  <div id="portfolio" className="mt-20">
-                    {/* 포트폴리오 섹션 내용 */}
-                  </div>
-
-                </div>
-              </div>
-              <img
-                alt="Hero"
-                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
-                height="10"
-                src="/HighresScreenshot00000.png"
-                width="50"
-              />
-            </div>
+      <section id="portfolio-image" className="w-full h-[720px] md:h-[810px] lg:h-[900px] bg-black">
+        <div className="container mx-auto px-4 md:px-6 h-full">
+          <div className="flex items-center justify-center h-full">
+            <img src="HighresScreenshot00000.png" alt="Portfolio Image" className="w-full h-full object-cover rounded-lg shadow-lg" />
           </div>
         </div>
       </section>
-      <section className="w-full py-12 md:py-24 lg:py-32 relative">
+
+
+
+
+
+
+
+      <section id="intro" className="w-full py-12 md:py-24 lg:py-32 relative">
         <div className="container mx-auto px-4 md:px-6 relative z-10 flex justify-between items-center">
           <div className="w-full md:w-1/2 pl-8 md:pr-8">
             <div className="space-y-2">
@@ -139,7 +144,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
+      <section id="portfolio" className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
@@ -158,7 +163,7 @@ export default function Home() {
         <div className="container mx-auto flex flex-col items-center justify-center gap-6 px-4 md:px-6 lg:flex lg:gap-10">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight text-center">작업에 대해</h2>
-            <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 text-center">
+            <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
               프로젝트 수행에는 3Ds Max, Substance Painter, Photoshop, Unreal Engine 등 다양한 디자인 및 모델링 툴을 활용했습니다. 3Ds Max를 통해 고품질의 3D 모델링을 진행하고, Substance Painter로 사실적인 텍스처링을 수행했습니다. 또한 Photoshop을 활용하여 2D 이미지 편집 및 합성 작업을 진행하였으며, Unreal Engine을 사용해 실시간 렌더링과 상호작용이 가능한 인터랙티브 환경을 구현하였습니다.
               이러한 다양한 툴의 활용을 통해 효율적이고 체계적인 워크플로우를 구축할 수 있었습니다. 각 툴의 특성을 잘 파악하고 적절히 활용함으로써, 디자인부터 모델링, 텍스처링, 렌더링에 이르는 전 과정을 원활히 진행할 수 있었습니다. 이를 통해 완성도 높은 작품을 제작할 수 있었으며, 프로젝트의 전반적인 퀄리티를 향상시킬 수 있었습니다.
             </p>
@@ -213,7 +218,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full py-12 md:py-24 lg:py-32 border-t">
+      <section id="contact" className="w-full py-12 md:py-24 lg:py-32 border-t">
         <div className="container mx-auto grid items-center justify-center gap-4 px-4 text-center md:px-6">
           <div className="space-y-3">
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">연락하기</h2>
